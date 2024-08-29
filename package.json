@@ -1,6 +1,13 @@
 {
-  "name": "ngx-dark-mode",
-  "version": "0.0.1",
+  "name": "@ngx-dark-mode-toggle/core",
+  "version": "0.0.3",
+  "homepage": "https://github.com/AbduBehindTheCode/ngx-dark-mode",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbduBehindTheCode/ngx-dark-mode"
+  },
+  "author": "Abderrahmen Trigui <abderrahmen.trigui95@gmail.com>",
+   "license": "ISC",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,7 +15,6 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^18.2.0",
     "@angular/cdk": "^18.2.1",
