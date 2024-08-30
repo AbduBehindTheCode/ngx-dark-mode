@@ -1,24 +1,95 @@
-# NgxDarkMode
+# Ngx-Dark-Mode-Toggle
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.0.
+## Demo
 
-## Code scaffolding
+Live demo is available on [Stackblitz](https://stackblitz.com/edit/ngx-dark-mode-toggle-demo?file=package.json)
 
-Run `ng generate component component-name --project ngx-dark-mode` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-dark-mode`.
-> Note: Don't forget to add `--project ngx-dark-mode` or else it will be added to the default project in your `angular.json` file. 
 
-## Build
+## Overview
 
-Run `ng build ngx-dark-mode` to build the project. The build artifacts will be stored in the `dist/` directory.
+The @**ngx-dark-mode/core Library** is a simple and lightweight Angular component that allows users to switch between dark and light themes. This customizable toggle button provides an enhanced user experience with support for modern design practices.
 
-## Publishing
+## Features
 
-After building your library with `ng build ngx-dark-mode`, go to the dist folder `cd dist/ngx-dark-mode` and run `npm publish`.
+- **Easy Integration:** Quickly add a dark/light mode toggle to any Angular application.
 
-## Running unit tests
+- **Customizable Appearance:** Customizable toggle button design to match your application’s aesthetics.
 
-Run `ng test ngx-dark-mode` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Persistent Mode:** Automatically saves the user’s mode preference in local storage, ensuring the selected mode is applied on subsequent visits.
 
-## Further help
+- **Lightweight:** Minimal impact on your application’s performance.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Installation
+
+```bash
+npm i @ngx-dark-mode-toggle/core`
+```
+
+## Usage
+1. **Import The Component:**
+Add the component to your Angular component class:
+
+   ```typescript
+   import { Component } from '@angular/core';
+   import { NgxDarkModeComponent } from '@ngx-dark-mode-toggle/core';
+
+   @Component({
+      selector: 'app-root',
+      standalone: true,
+      imports: [NgxDarkModeComponent],
+      templateUrl: './app.component.html',
+      styleUrl: './app.component.scss',
+   })
+   ```
+
+2. **Add the Toggle Component:**
+Add the component to your Angular component class:
+
+   ```html
+    <lib-ngx-dark-mode></lib-ngx-dark-mode>
+   ```
+
+3. **Customizing Styles for Dark Mode (Optional):**
+If you want to customize the appearance of your component in dark mode, you can easily do so by defining specific styles in your root `style.scss` file.
+
+    For example, if your component has a CSS class like this:
+
+    ```css
+    .site-header {
+        background-color: #f67b4e;
+        color: #ffffff;
+    }
+    ```
+    And you want to overwrite the background color when dark mode is enabled, you can add the following styles to your style.scss:
+    ```css
+    body.dark .site-header {
+        background-color: #CC5500 !important;
+    }
+    ```
+
+## Options
+
+`@ngx-dark-mode-toggle/core` ships with the following options:
+
+| Option              | Description                                                | Default          |
+|---------------------|------------------------------------------------------------|------------------|
+| `disableModeStorage`| Disables saving the mode in local storage.                 | `false`          |
+| `hideLabel`         | Hides the label next to the toggle button.                 | `false`          |
+| `labelText`         | Specifies the text of the label next to the toggle button. | `'Dark mode'`    |
+
+
+You can configure the `<lib-ngx-dark-mode>` component with the following options:
+
+```html
+<lib-ngx-dark-mode
+  [disableModeStorage]="true"
+  [hideLabel]="false"
+  [labelText]="'Dark'">
+</lib-ngx-dark-mode>
+```
+
+## Have an Issue or Feature Request?
+
+If you encounter any issues or have a feature request, we'd love to hear from you! Please feel free to [open an issue](https://github.com/AbduBehindTheCode/ngx-dark-mode/issues) on our GitHub repository.
+
+Whether it's a bug report, a suggestion for improvement, or a feature you'd like to see, your feedback helps us make this library better for everyone.
