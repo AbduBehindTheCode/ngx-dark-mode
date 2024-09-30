@@ -38,12 +38,12 @@ Add the component to your Angular component class:
 
    ```typescript
    import { Component } from '@angular/core';
-   import { NgxDarkModeComponent } from '@ngx-dark-mode-toggle/core';
+   import { ToggleComponent } from '@ngx-dark-mode-toggle/core';
 
    @Component({
       selector: 'app-root',
       standalone: true,
-      imports: [NgxDarkModeComponent],
+      imports: [ToggleComponent],
       templateUrl: './app.component.html',
       styleUrl: './app.component.scss',
    })
@@ -53,7 +53,7 @@ Add the component to your Angular component class:
 Add the component to your Angular component class:
 
    ```html
-    <lib-ngx-dark-mode></lib-ngx-dark-mode>
+    <ngx-dm-toggle></ngx-dm-toggle>
    ```
 
 3. **Customizing Styles for Dark Mode (Optional):**
@@ -85,14 +85,14 @@ If you want to customize the appearance of your component in dark mode, you can 
 | `labelText`         | Specifies the text of the label next to the toggle button. | `'Dark mode'`    |
 
 
-You can configure the `<lib-ngx-dark-mode>` component with the following options:
+You can configure the `<ngx-dm-toggle>` component with the following options:
 
 ```html
-<lib-ngx-dark-mode
+<ngx-dm-toggle
   [disableModeStorage]="true"
   [hideLabel]="false"
   [labelText]="'Dark'">
-</lib-ngx-dark-mode>
+</ngx-dm-toggle>
 ```
 
 ## Have an Issue or Feature Request?
