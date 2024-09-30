@@ -1,8 +1,15 @@
 # Ngx-Dark-Mode-Toggle
 
+## New Feature
+
+### 🎉 New Feature Added: `ngx-dark-mode-select` 🎉
+
+We are excited to announce a **new feature** in our package: the `ngx-dark-mode-select` component! This feature allows you to toggle between **dark mode** and **light mode** with a select input element, elevating the user experience with customizable theme options.
+
+
 ## Demo
 
-Live demo is available on [Stackblitz](https://stackblitz.com/edit/ngx-dark-mode-toggle-demo?file=package.json)
+Live demo is available on [Ngx-dark-mode-toggle](https://stackblitz.com/edit/ngx-dark-mode-toggle-demo) and [Ngx-dark-mode-select](https://stackblitz.com/edit/ngx-dark-mode-select-demo)
 
 
 ## Overview
