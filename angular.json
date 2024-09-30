@@ -5,6 +5,11 @@
   "projects": {
     "ngx-dark-mode": {
       "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "root": "projects/ngx-dark-mode",
       "sourceRoot": "projects/ngx-dark-mode/src",
       "prefix": "lib",
